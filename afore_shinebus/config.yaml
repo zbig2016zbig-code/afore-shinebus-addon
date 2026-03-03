@@ -1,12 +1,6 @@
-mqtt:
-  host: homeassistant.local
-  port: 1883
-  username: "twoj_user"
-  password: "twoje_haslo"
-  topic: "afore"
-
-inverter:
-  host: "192.168.1.10"
-  port: 8899
-  interval: 5
-
+name: Afore ShineBus Add-on Repository 
+url: https://github.com/zbig2016zbig-code/afore-shinebus-addon
+maintainer: Zbigniew
+addons:
+ afore_shinebus:
+  name: Afore ShineBus
