@@ -1,7 +1,7 @@
 {
   "name": "Afore ShineBus",
   "version": "1.0.0",
-  "slug": "afore_shinebus_zbig",
+  "slug": "afore_shinebus_zbig2016",
   "description": "Local ShineBus reader for Afore inverters",
   "arch": ["amd64", "armv7", "armhf", "aarch64", "i386"],
   "startup": "application",
