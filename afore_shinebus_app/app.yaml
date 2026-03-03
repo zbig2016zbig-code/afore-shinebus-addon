@@ -1,1 +1,23 @@
+name: Afore ShineBus
+slug: afore_shinebus
+version: "1.0.0"
+description: "Local ShineBus reader for Afore inverters"
+type: daemon
+
+env:
+  MQTT_HOST: "core-mosquitto"
+  MQTT_PORT: "1883"
+  MQTT_USERNAME: ""
+  MQTT_PASSWORD: ""
+  MQTT_TOPIC: "shibus/aforezbig2016"
+  INVERTER_HOST: ""
+  INVERTER_PORT: "8899"
+  INTERVAL: "5"
+
+permissions:
+  network: host
+  mqtt: readwrite
+  system: read
+
+entrypoint: /entrypoint.sh
 
