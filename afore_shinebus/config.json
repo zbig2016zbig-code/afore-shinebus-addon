@@ -1,13 +1,29 @@
 {
   "name": "Afore ShineBus",
   "version": "1.0.0",
-  "arch": ["amd64", "armv7", "armhf", "aarch64", "i386"],
   "slug": "afore_shinebus",
-  "description": "Local ShineBus reader for Afore inverters (LSW3/BNT series)",
-  "startup": "services",
+  "description": "Local ShineBus reader for Afore inverters",
+  "arch": ["amd64", "armv7", "armhf", "aarch64", "i386"],
+  "startup": "application",
   "boot": "auto",
-  "ports": {},
-  "map": ["config:rw"],
-  "options": {},
-  "schema": {}
+  "options": {
+    "mqtt_host": "homeassistant.local",
+    "mqtt_port": 1883,
+    "mqtt_username": "",
+    "mqtt_password": "",
+    "mqtt_topic": "afore",
+    "inverter_host": "",
+    "inverter_port": 8899,
+    "interval": 5
+  },
+  "schema": {
+    "mqtt_host": "str",
+    "mqtt_port": "int",
+    "mqtt_username": "str?",
+    "mqtt_password": "str?",
+    "mqtt_topic": "str",
+    "inverter_host": "str",
+    "inverter_port": "int",
+    "interval": "int"
+  }
 }
