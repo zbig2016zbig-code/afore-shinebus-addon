@@ -1,1 +1,20 @@
+{
+  "name": "Afore ShineBus",
+  "version": "1.0.0",
+  "slug": "afore_shinebus_zbig2016",
+  "description": "Local ShineBus reader for Afore inverters",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["amd64", "armv7", "armhf", "aarch64", "i386"],
+  "webui": "",
+  "ports": {
+    "8899/tcp": 8899
+  },
+  "ports_description": {
+    "8899/tcp": "Afore inverter port"
+  },
+  "map": ["config:rw"],
+  "options": {},
+  "schema": {}
+}
 
