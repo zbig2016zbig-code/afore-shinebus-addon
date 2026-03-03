@@ -1,8 +1,7 @@
 name: Afore ShineBus Add-on Repository
 url: https://github.com/zbig2016zbig-code/afore-shinebus-addon
 maintainer: Zbigniew
+
 addons:
   afore_shinebus:
     name: Afore ShineBus
-
-
