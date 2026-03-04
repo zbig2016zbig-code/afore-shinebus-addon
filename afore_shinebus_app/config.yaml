@@ -1,1 +1,14 @@
+name: Afore Shinebus App
+version: "1.0.0"
+slug: afore_shinebus_app
+description: Afore Shinebus integration addon
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+ports:
+  5000/tcp: 5000
+options: {}
+schema: {}
 
