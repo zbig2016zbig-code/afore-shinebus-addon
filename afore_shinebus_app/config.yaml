@@ -1,14 +1,19 @@
-name: Afore Shinebus App
-version: "1.0.0"
+name: Afore Shinebus Add-on
 slug: afore_shinebus_app
-description: Afore Shinebus integration addon
+version: "1.0.0"
+description: Add-on for reading data from Afore Shinebus inverters
+url: https://github.com/zbig2016zbig-code/afore-shinebus-addon
 arch:
   - amd64
   - aarch64
+  - armv7
 startup: services
 boot: auto
 ports:
   5000/tcp: 5000
+map:
+  - config:rw
+  - share:rw
 options: {}
 schema: {}
-
+image: null
